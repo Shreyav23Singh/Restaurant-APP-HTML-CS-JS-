@@ -1,1 +1,143 @@
- * * HTML Code * *
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant App</title>
+</head>
+<style>
+    .res{
+        background-color: tomato;
+        color: White;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        font-style: italic;
+        font-weight: bold;
+        font-size: 40px;
+        text-decoration: solid;
+        text-size-adjust: 10px;
+
+    }
+    .res1{
+        color :white;
+        background-color:rgb(140, 112, 216);
+        letter-spacing: 3px;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        font-weight: bolder;
+        font-style: italic;
+        text-decoration: sandybrown;
+        font-size: 30px;
+
+    }
+    .res2{
+        color: black;
+        border: 5px solid;
+        font-weight: bold;
+        border-radius: 8px;
+        text-decoration-style: solid;
+        font-family: 'Times New Roman', Times, serif;
+        background-color: lime;
+        font-size: 18px;
+        text-shadow: 2px 2px 2px white;
+    }
+    h3{
+        text-align: center;
+        font-weight: bold;
+        font-size:35px;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+    }
+    .container{
+        margin: auto;
+        overflow: auto;
+        width: 60%;
+    }
+    #form1{
+        background-color: lightskyblue;
+    }
+    input{
+        color: black;
+        text-size-adjust: 10px;
+    }
+    .button{
+        color: white;
+        background-color:blue;
+        cursor: pointer;
+        border: lavenderblush;
+        padding: 8px 15px;
+        text-align: center;
+        width: 30%;
+        text-decoration: solid;
+        font-size: larger;
+        font-weight: bold;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        
+        
+
+    }
+    .button:hover{
+        background-color: red;
+    }
+    form{
+        text-align: center;
+        font-weight: bold;
+        font-style: italic;
+        flex-direction: column;
+        font-size: 18px;
+        letter-spacing: 1px;
+        text-decoration: solid;
+        font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif ;
+    }
+    .error {
+  background: orangered;
+  color: #fff;
+  padding: 5px;
+  margin: 5px;
+}
+</style>
+<body>
+    <marquee class ="res">Barbeque Restaurant</marquee>
+    <marquee class="res1">Welcome&#128512 ! "Enjoy Delicious Food with Good Ambience "</marquee> 
+    <center>
+        <marquee class="res2" direction ="down" width="500" height="100" behaviour="alternate">
+            <marquee class ="res3" behaviour ="alternate">On Diwali Eve! - You will get 20% discount</marquee>
+        </marquee>
+    </center>  
+    <section class="container">
+        <form id="form1">
+            <h3>Hi Foodie! &#128519</h3>
+            <div class="msg"></div>
+            <div>
+                <label for="name">Name:<br></label>
+                <input type="text" id="name" required style="width: 40% ;"><br>
+            </div>
+            <div>
+                <label for="dish">Choose Dish :<br></label> 
+                <input type="text" id="dish" required style="width: 40% ;"><br>
+            </div>
+            <div><label for="price">Choose Price :<br></label> 
+                <input type="text" id="price" required style="width: 40% ;"><br>
+            </div>
+            <div><label for="price">Choose Table:<br></label> 
+                <select name="table" id="table">
+                    <!-- <option value="choose">Choose_From_An_option</option> -->
+                    <option value="Table1">Table1</option>
+                    <option value="Table2">Table2</option>
+                    <option value="Table3">Table3</option>
+                    <option value="Table4">Table4</option>
+                    <option value="Table5">Table5</option>
+                    <option value="Table6">Table6</option>
+                    <option value="Table7">Table7</option>
+                    <option value="Table8">Table8</option>
+                    <option value="Table9">Table9</option>
+                    <option value="Table10">Table10</option>
+                </select>
+            </div><br>
+            <input class="button" type="submit" value="Add to bit">
+
+        </form>
+        <ul id="users"></ul>
+    </section>
+</body>
+<script src="https://crudcrud.com/api/8f585fc3b18a4a1986b8473052182c3d/AppointmentData"></script>
+<script src="restaurant.js"></script>
+</html>
